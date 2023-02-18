@@ -6,7 +6,7 @@ load_dotenv()
 class Config(object):
     """Base Config Object"""
     DEBUG = True
-    SECRET_KEY = os.environ.get('SECRET_KEY', 'Som3$ec5etK*y')
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'Som3$ec5e987644tK*y')
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'localhost')
     MAIL_PORT = os.environ.get('MAIL_PORT', '25')
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
