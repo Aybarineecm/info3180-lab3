@@ -14,3 +14,7 @@ button{
     border-radius: 5px;
   
 }
+textarea {
+    width:500px;
+    height: 150px;
+    }
