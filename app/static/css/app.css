@@ -2,6 +2,15 @@ body {
     padding-top: 5rem;
 }
 
-#mark{
+mark{
     color: red;
+    background: none;
+}
+
+button{
+    background-color: #24a0ed;
+    color:white;
+    border-color: #24a0ed;
+    border-radius: 5px;
+  
 }
