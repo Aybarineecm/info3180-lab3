@@ -9,7 +9,7 @@ from app import app
 from flask import render_template, request, redirect, url_for, flash
 from forms import ContactForm
 from app import mail
-from flask_mail import Message
+from flask_mail import Message, Mail
 
 
 ###
@@ -32,7 +32,7 @@ def contact():
     form= ContactForm()
     if request.method == "POST" and form.validate_on_submit():
         Name= form.name.data
-        msg = Message(request.form['Subject'],sender=(request.form['Name'],request.form['Email']),recipients=["check@mail.com"])
+        msg = Message(request.form['subject'],sender=(request.form['name'],request.form['email']),recipients=["check@mail.com"])
         msg.body = request.form['body']
         mail.send(msg)
         flash('Message Sent Successfully') 
